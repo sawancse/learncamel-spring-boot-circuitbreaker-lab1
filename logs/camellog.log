@@ -1,0 +1,91 @@
+03-11-2021 19:35:44.682 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication using Java 1.8.0_202 on DESKTOP-AH2VL3Q with PID 13552 (H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes started by lenovo in H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1)
+03-11-2021 19:35:44.694 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+03-11-2021 19:35:48.177 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerErrorChannel - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+03-11-2021 19:35:48.196 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerTaskScheduler - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+03-11-2021 19:35:48.204 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerHeaderChannelRegistry - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+03-11-2021 19:35:48.481 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+03-11-2021 19:35:48.536 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+03-11-2021 19:35:48.539 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+03-11-2021 19:35:49.219 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+03-11-2021 19:35:49.234 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+03-11-2021 19:35:49.235 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+03-11-2021 19:35:49.236 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.45]
+03-11-2021 19:35:49.502 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+03-11-2021 19:35:49.505 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 4600 ms
+03-11-2021 19:35:49.591 [main] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+03-11-2021 19:35:49.591 [main] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+03-11-2021 19:35:49.596 [main] INFO  c.n.config.DynamicPropertyFactory.getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4a3be6a5
+03-11-2021 19:35:50.762 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+03-11-2021 19:35:51.074 [main] INFO  o.a.camel.support.LRUCacheFactory.createLRUCacheFactory - Detected and using LRUCacheFactory: camel-caffeine-lrucache
+03-11-2021 19:35:52.141 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: c78e6ad1-413b-4de2-899a-abb294b7cfbf
+
+03-11-2021 19:35:52.422 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@485e13d7, org.springframework.security.web.context.SecurityContextPersistenceFilter@194d329e, org.springframework.security.web.header.HeaderWriterFilter@5961e92d, org.springframework.security.web.csrf.CsrfFilter@6dab01d9, org.springframework.security.web.authentication.logout.LogoutFilter@1455154c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f3faa70, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@526b2f3e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@43984213, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@70d63e05, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e7fe6d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c9fbb61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ff7a73, org.springframework.security.web.session.SessionManagementFilter@3a2d3909, org.springframework.security.web.access.ExceptionTranslationFilter@36327cec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43982337]
+03-11-2021 19:35:53.071 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+03-11-2021 19:35:53.072 [main] INFO  o.s.i.c.PublishSubscribeChannel.info - Channel 'application.errorChannel' has 1 subscriber(s).
+03-11-2021 19:35:53.073 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - started bean '_org.springframework.integration.errorLogger'
+03-11-2021 19:35:53.074 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+03-11-2021 19:35:53.123 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+03-11-2021 19:35:53.245 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRoutesFromDirectory - Loading additional Camel XML routes from: classpath:camel/*.xml
+03-11-2021 19:35:53.246 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRouteTemplatesFromDirectory - Loading additional Camel XML route templates from: classpath:camel-template/*.xml
+03-11-2021 19:35:53.247 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRestsFromDirectory - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+03-11-2021 19:35:53.925 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Pausing ProtocolHandler ["http-nio-8080"]
+03-11-2021 19:35:53.926 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+03-11-2021 19:35:53.934 [main] WARN  o.a.c.loader.WebappClassLoaderBase.log - The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+03-11-2021 19:35:53.937 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Stopping ProtocolHandler ["http-nio-8080"]
+03-11-2021 19:35:53.942 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Destroying ProtocolHandler ["http-nio-8080"]
+03-11-2021 19:35:53.948 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+03-11-2021 19:35:54.040 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.apache.camel.FailedToCreateRouteException: Failed to create route route2 at: >>> To[http://google.com] <<< in route: Route(route2)[From[direct-vm:start] -> [To[http://google.com... because of No endpoint could be found for: http://google.com, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:229)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:73)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:603)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:558)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:2655)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2427)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2444)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:130)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:167)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.learncamel.LearncamelSpringBootApplication.main(LearncamelSpringBootApplication.java:10)
+Caused by: org.apache.camel.NoSuchEndpointException: No endpoint could be found for: http://google.com, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:919)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:794)
+	at org.apache.camel.support.CamelContextHelper.resolveEndpoint(CamelContextHelper.java:123)
+	at org.apache.camel.reifier.SendReifier.resolveEndpoint(SendReifier.java:43)
+	at org.apache.camel.reifier.SendReifier.createProcessor(SendReifier.java:36)
+	at org.apache.camel.reifier.ProcessorReifier.makeProcessor(ProcessorReifier.java:829)
+	at org.apache.camel.reifier.ProcessorReifier.addRoutes(ProcessorReifier.java:575)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:227)
+	... 26 common frames omitted
+03-11-2021 19:35:54.050 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+03-11-2021 19:35:54.050 [main] INFO  o.s.i.c.PublishSubscribeChannel.info - Channel 'application.errorChannel' has 0 subscriber(s).
+03-11-2021 19:35:54.050 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - stopped bean '_org.springframework.integration.errorLogger'

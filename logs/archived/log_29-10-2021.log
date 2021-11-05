@@ -1,0 +1,943 @@
+29-10-2021 10:35:34.036 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication on DESKTOP-AH2VL3Q with PID 15136 (H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes started by lenovo in H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1)
+29-10-2021 10:35:34.063 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+29-10-2021 10:35:34.593 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.learncamel.LearncamelSpringBootApplication]; nested exception is java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+29-10-2021 10:35:34.639 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+29-10-2021 10:35:34.673 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.learncamel.LearncamelSpringBootApplication]; nested exception is java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:610)
+	at org.springframework.context.annotation.ConfigurationClassParser.access$800(ConfigurationClassParser.java:111)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:812)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:809)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:780)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:193)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.learncamel.LearncamelSpringBootApplication.main(LearncamelSpringBootApplication.java:10)
+Caused by: java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:54)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:226)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:600)
+	... 19 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/bind/RelaxedPropertyResolver
+	at org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration$Condition.getMatchOutcome(CamelSSLAutoConfiguration.java:51)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 22 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.bind.RelaxedPropertyResolver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 24 common frames omitted
+29-10-2021 10:38:39.621 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication using Java 1.8.0_202 on DESKTOP-AH2VL3Q with PID 11652 (H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes started by lenovo in H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1)
+29-10-2021 10:38:39.627 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+29-10-2021 10:38:40.308 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.learncamel.LearncamelSpringBootApplication]; nested exception is java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+29-10-2021 10:38:40.324 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+29-10-2021 10:38:40.363 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.learncamel.LearncamelSpringBootApplication]; nested exception is java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:610)
+	at org.springframework.context.annotation.ConfigurationClassParser.access$800(ConfigurationClassParser.java:111)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:812)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:809)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:780)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:193)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.learncamel.LearncamelSpringBootApplication.main(LearncamelSpringBootApplication.java:10)
+Caused by: java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:54)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:226)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:600)
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/bind/RelaxedPropertyResolver
+	at org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration$Condition.getMatchOutcome(CamelSSLAutoConfiguration.java:51)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.bind.RelaxedPropertyResolver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 common frames omitted
+29-10-2021 10:52:58.402 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication using Java 1.8.0_202 on DESKTOP-AH2VL3Q with PID 2848 (H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes started by lenovo in H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1)
+29-10-2021 10:52:58.406 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+29-10-2021 10:52:58.766 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.learncamel.LearncamelSpringBootApplication]; nested exception is java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+29-10-2021 10:52:58.773 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+29-10-2021 10:52:58.795 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.learncamel.LearncamelSpringBootApplication]; nested exception is java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:610)
+	at org.springframework.context.annotation.ConfigurationClassParser.access$800(ConfigurationClassParser.java:111)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:812)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:809)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:780)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:193)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.learncamel.LearncamelSpringBootApplication.main(LearncamelSpringBootApplication.java:10)
+Caused by: java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:54)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:226)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:600)
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/bind/RelaxedPropertyResolver
+	at org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration$Condition.getMatchOutcome(CamelSSLAutoConfiguration.java:51)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.bind.RelaxedPropertyResolver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 common frames omitted
+29-10-2021 10:59:00.960 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication using Java 1.8.0_202 on DESKTOP-AH2VL3Q with PID 13804 (H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes started by lenovo in H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1)
+29-10-2021 10:59:00.964 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+29-10-2021 10:59:01.379 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.learncamel.LearncamelSpringBootApplication]; nested exception is java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+29-10-2021 10:59:01.386 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+29-10-2021 10:59:01.406 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.learncamel.LearncamelSpringBootApplication]; nested exception is java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:610)
+	at org.springframework.context.annotation.ConfigurationClassParser.access$800(ConfigurationClassParser.java:111)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:812)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:809)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:780)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:193)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.learncamel.LearncamelSpringBootApplication.main(LearncamelSpringBootApplication.java:10)
+Caused by: java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:54)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:226)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:600)
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/bind/RelaxedPropertyResolver
+	at org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration$Condition.getMatchOutcome(CamelSSLAutoConfiguration.java:51)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.bind.RelaxedPropertyResolver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 common frames omitted
+29-10-2021 11:02:29.864 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication using Java 1.8.0_202 on DESKTOP-AH2VL3Q with PID 10428 (H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes started by lenovo in H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1)
+29-10-2021 11:02:29.868 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+29-10-2021 11:02:30.263 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.learncamel.LearncamelSpringBootApplication]; nested exception is java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+29-10-2021 11:02:30.271 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+29-10-2021 11:02:30.291 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.learncamel.LearncamelSpringBootApplication]; nested exception is java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:610)
+	at org.springframework.context.annotation.ConfigurationClassParser.access$800(ConfigurationClassParser.java:111)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:812)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:809)
+	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:780)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:193)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.learncamel.LearncamelSpringBootApplication.main(LearncamelSpringBootApplication.java:10)
+Caused by: java.lang.IllegalStateException: Could not evaluate condition on org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration due to org/springframework/boot/bind/RelaxedPropertyResolver not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:54)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:226)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:600)
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/boot/bind/RelaxedPropertyResolver
+	at org.apache.camel.spring.boot.security.CamelSSLAutoConfiguration$Condition.getMatchOutcome(CamelSSLAutoConfiguration.java:51)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.boot.bind.RelaxedPropertyResolver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 common frames omitted
+29-10-2021 11:22:05.255 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 6.0.18.Final
+29-10-2021 11:22:05.593 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+java.lang.NoSuchMethodError: org.springframework.boot.builder.SpringApplicationBuilder.<init>([Ljava/lang/Object;)V
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:161)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:102)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:68)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.learncamel.LearncamelSpringBootApplication.main(LearncamelSpringBootApplication.java:10)
+29-10-2021 11:24:58.567 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication on DESKTOP-AH2VL3Q with PID 2068 (H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes started by lenovo in H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1)
+29-10-2021 11:24:58.571 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+29-10-2021 11:24:59.477 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+29-10-2021 11:24:59.493 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+29-10-2021 11:24:59.494 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+29-10-2021 11:24:59.494 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.33]
+29-10-2021 11:24:59.596 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+29-10-2021 11:24:59.596 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 978 ms
+29-10-2021 11:24:59.661 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'simpleCamelRoute' defined in file [H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes\com\learncamel\route\SimpleCamelRoute.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.learncamel.route.SimpleCamelRoute]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.apache.camel.builder cannot be resolved
+	RouteBuilder cannot be resolved to a type
+	The method configure() of type SimpleCamelRoute must override or implement a supertype method
+	The method from(String) is undefined for the type SimpleCamelRoute
+	The method from(String) is undefined for the type SimpleCamelRoute
+
+29-10-2021 11:24:59.664 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+29-10-2021 11:24:59.681 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+29-10-2021 11:24:59.690 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'simpleCamelRoute' defined in file [H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes\com\learncamel\route\SimpleCamelRoute.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.learncamel.route.SimpleCamelRoute]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.apache.camel.builder cannot be resolved
+	RouteBuilder cannot be resolved to a type
+	The method configure() of type SimpleCamelRoute must override or implement a supertype method
+	The method from(String) is undefined for the type SimpleCamelRoute
+	The method from(String) is undefined for the type SimpleCamelRoute
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.learncamel.LearncamelSpringBootApplication.main(LearncamelSpringBootApplication.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.learncamel.route.SimpleCamelRoute]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.apache.camel.builder cannot be resolved
+	RouteBuilder cannot be resolved to a type
+	The method configure() of type SimpleCamelRoute must override or implement a supertype method
+	The method from(String) is undefined for the type SimpleCamelRoute
+	The method from(String) is undefined for the type SimpleCamelRoute
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 17 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import org.apache.camel.builder cannot be resolved
+	RouteBuilder cannot be resolved to a type
+	The method configure() of type SimpleCamelRoute must override or implement a supertype method
+	The method from(String) is undefined for the type SimpleCamelRoute
+	The method from(String) is undefined for the type SimpleCamelRoute
+
+	at com.learncamel.route.SimpleCamelRoute.<init>(SimpleCamelRoute.java:3)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	... 19 common frames omitted
+29-10-2021 11:30:22.274 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter.report - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:161)
+
+The following method did not exist:
+
+    org.springframework.boot.builder.SpringApplicationBuilder.<init>([Ljava/lang/Object;)V
+
+The method's class, org.springframework.boot.builder.SpringApplicationBuilder, is available from the following locations:
+
+    jar:file:/C:/Users/lenovo/.m2/repository/org/springframework/boot/spring-boot/2.4.5/spring-boot-2.4.5.jar!/org/springframework/boot/builder/SpringApplicationBuilder.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.springframework.boot.builder.SpringApplicationBuilder: file:/C:/Users/lenovo/.m2/repository/org/springframework/boot/spring-boot/2.4.5/spring-boot-2.4.5.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.springframework.boot.builder.SpringApplicationBuilder
+
+29-10-2021 12:54:22.757 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication using Java 1.8.0_202 on DESKTOP-AH2VL3Q with PID 9824 (H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes started by lenovo in H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1)
+29-10-2021 12:54:22.781 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+29-10-2021 12:54:23.725 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerErrorChannel - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+29-10-2021 12:54:23.732 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerTaskScheduler - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+29-10-2021 12:54:23.734 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerHeaderChannelRegistry - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+29-10-2021 12:54:23.831 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+29-10-2021 12:54:23.840 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+29-10-2021 12:54:23.841 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+29-10-2021 12:54:24.105 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+29-10-2021 12:54:24.124 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+29-10-2021 12:54:24.125 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+29-10-2021 12:54:24.125 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.45]
+29-10-2021 12:54:24.274 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+29-10-2021 12:54:24.274 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1397 ms
+29-10-2021 12:54:24.299 [main] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+29-10-2021 12:54:24.300 [main] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+29-10-2021 12:54:24.302 [main] INFO  c.n.config.DynamicPropertyFactory.getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2f7dcef2
+29-10-2021 12:54:24.827 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+29-10-2021 12:54:24.891 [main] INFO  o.a.camel.support.LRUCacheFactory.createLRUCacheFactory - Detected and using LRUCacheFactory: camel-caffeine-lrucache
+29-10-2021 12:54:25.270 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: 1ae1588d-10f9-44d0-9497-cf8d73a58733
+
+29-10-2021 12:54:25.356 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70d63e05, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a2d3909, org.springframework.security.web.header.HeaderWriterFilter@1a8df0b3, org.springframework.security.web.csrf.CsrfFilter@593a6726, org.springframework.security.web.authentication.logout.LogoutFilter@7cdbaa50, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@559cedee, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1455154c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@e11ecfa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4b31a708, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@194d329e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b32b129, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@485e13d7, org.springframework.security.web.session.SessionManagementFilter@5961e92d, org.springframework.security.web.access.ExceptionTranslationFilter@4693a9ef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46e64760]
+29-10-2021 12:54:25.519 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+29-10-2021 12:54:25.519 [main] INFO  o.s.i.c.PublishSubscribeChannel.info - Channel 'application.errorChannel' has 1 subscriber(s).
+29-10-2021 12:54:25.519 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - started bean '_org.springframework.integration.errorLogger'
+29-10-2021 12:54:25.520 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+29-10-2021 12:54:25.665 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+29-10-2021 12:54:25.688 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRoutesFromDirectory - Loading additional Camel XML routes from: classpath:camel/*.xml
+29-10-2021 12:54:25.688 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRouteTemplatesFromDirectory - Loading additional Camel XML route templates from: classpath:camel-template/*.xml
+29-10-2021 12:54:25.689 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRestsFromDirectory - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+29-10-2021 12:54:25.833 [main] INFO  o.a.c.i.engine.AbstractCamelContext.doStartContext - Apache Camel 3.7.5 (camel-1) is starting
+29-10-2021 12:54:25.834 [main] INFO  o.a.c.i.engine.AbstractCamelContext.doStartCamel - StreamCaching is not in use. If using streams then it's recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+29-10-2021 12:54:25.853 [main] INFO  o.a.c.i.e.InternalRouteStartupManager.log - Route: route1 started and consuming from: timer://hello
+29-10-2021 12:54:25.854 [main] INFO  o.a.c.i.e.InternalRouteStartupManager.log - Route: route2 started and consuming from: direct://start
+29-10-2021 12:54:25.858 [main] INFO  o.a.c.i.engine.AbstractCamelContext.doStartContext - Total 2 routes, of which 2 are started
+29-10-2021 12:54:25.859 [main] INFO  o.a.c.i.engine.AbstractCamelContext.doStartContext - Apache Camel 3.7.5 (camel-1) started in 26ms
+29-10-2021 12:54:25.884 [main] INFO  c.l.LearncamelSpringBootApplication.logStarted - Started LearncamelSpringBootApplication in 3.552 seconds (JVM running for 5.652)
+29-10-2021 12:54:56.063 [Camel (camel-1) thread #1 - timer://hello] ERROR o.a.c.p.e.DefaultErrorHandler.log - Failed delivery for (MessageId: EB0226D40307461-0000000000000000 on ExchangeId: EB0226D40307461-0000000000000001). Exhausted after delivery attempt: 1 caught: org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [from[timer://hello?period=10s]                                                ] [     29199]
+	...
+[route1            ] [to1               ] [direct-vm:start                                                               ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.getConsumer(DirectVmBlockingProducer.java:69)
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.process(DirectVmBlockingProducer.java:56)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:169)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:395)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:60)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:147)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:312)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:207)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+29-10-2021 12:54:56.065 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.c.file.GenericFileOnCompletion.processStrategyRollback - Rollback file strategy: org.apache.camel.component.file.strategy.GenericFileDeleteProcessStrategy@6d7226e for file: GenericFile[fileAdd.txt]
+29-10-2021 12:54:56.068 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[EB0226D40307461-0000000000000001]. Caused by: [org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException - No consumers available on endpoint: direct-vm://start. Exchange[]]
+org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.getConsumer(DirectVmBlockingProducer.java:69)
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.process(DirectVmBlockingProducer.java:56)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:169)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:395)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:60)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:147)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:312)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:207)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+29-10-2021 12:54:56.080 [Camel (camel-1) thread #1 - timer://hello] ERROR o.a.c.p.e.DefaultErrorHandler.log - Failed delivery for (MessageId: EB0226D40307461-0000000000000002 on ExchangeId: EB0226D40307461-0000000000000003). Exhausted after delivery attempt: 1 caught: org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [from[timer://hello?period=10s]                                                ] [        11]
+	...
+[route1            ] [to1               ] [direct-vm:start                                                               ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.getConsumer(DirectVmBlockingProducer.java:69)
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.process(DirectVmBlockingProducer.java:56)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:169)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:395)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:60)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:147)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:312)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:207)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+29-10-2021 12:54:56.081 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.c.file.GenericFileOnCompletion.processStrategyRollback - Rollback file strategy: org.apache.camel.component.file.strategy.GenericFileDeleteProcessStrategy@6d7226e for file: GenericFile[fileAdd.txt]
+29-10-2021 12:54:56.083 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[EB0226D40307461-0000000000000003]. Caused by: [org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException - No consumers available on endpoint: direct-vm://start. Exchange[]]
+org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.getConsumer(DirectVmBlockingProducer.java:69)
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.process(DirectVmBlockingProducer.java:56)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:169)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:395)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:60)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:147)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:312)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:207)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+29-10-2021 12:55:06.072 [Camel (camel-1) thread #1 - timer://hello] ERROR o.a.c.p.e.DefaultErrorHandler.log - Failed delivery for (MessageId: EB0226D40307461-0000000000000004 on ExchangeId: EB0226D40307461-0000000000000005). Exhausted after delivery attempt: 1 caught: org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [from[timer://hello?period=10s]                                                ] [         1]
+	...
+[route1            ] [to1               ] [direct-vm:start                                                               ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.getConsumer(DirectVmBlockingProducer.java:69)
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.process(DirectVmBlockingProducer.java:56)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:169)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:395)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:60)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:147)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:312)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:207)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+29-10-2021 12:55:06.073 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.c.file.GenericFileOnCompletion.processStrategyRollback - Rollback file strategy: org.apache.camel.component.file.strategy.GenericFileDeleteProcessStrategy@6d7226e for file: GenericFile[fileAdd.txt]
+29-10-2021 12:55:06.074 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[EB0226D40307461-0000000000000005]. Caused by: [org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException - No consumers available on endpoint: direct-vm://start. Exchange[]]
+org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.getConsumer(DirectVmBlockingProducer.java:69)
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.process(DirectVmBlockingProducer.java:56)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:169)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:395)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:60)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:147)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:312)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:207)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+29-10-2021 12:55:16.079 [Camel (camel-1) thread #1 - timer://hello] ERROR o.a.c.p.e.DefaultErrorHandler.log - Failed delivery for (MessageId: EB0226D40307461-0000000000000006 on ExchangeId: EB0226D40307461-0000000000000007). Exhausted after delivery attempt: 1 caught: org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [from[timer://hello?period=10s]                                                ] [         2]
+	...
+[route1            ] [to1               ] [direct-vm:start                                                               ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.getConsumer(DirectVmBlockingProducer.java:69)
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.process(DirectVmBlockingProducer.java:56)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:169)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:395)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:60)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:147)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:312)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:207)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+29-10-2021 12:55:16.081 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.c.file.GenericFileOnCompletion.processStrategyRollback - Rollback file strategy: org.apache.camel.component.file.strategy.GenericFileDeleteProcessStrategy@6d7226e for file: GenericFile[fileAdd.txt]
+29-10-2021 12:55:16.083 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[EB0226D40307461-0000000000000007]. Caused by: [org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException - No consumers available on endpoint: direct-vm://start. Exchange[]]
+org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.getConsumer(DirectVmBlockingProducer.java:69)
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.process(DirectVmBlockingProducer.java:56)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:169)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:395)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:60)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:147)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:312)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:207)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+29-10-2021 12:55:26.092 [Camel (camel-1) thread #1 - timer://hello] ERROR o.a.c.p.e.DefaultErrorHandler.log - Failed delivery for (MessageId: EB0226D40307461-0000000000000008 on ExchangeId: EB0226D40307461-0000000000000009). Exhausted after delivery attempt: 1 caught: org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [from[timer://hello?period=10s]                                                ] [         3]
+	...
+[route1            ] [to1               ] [direct-vm:start                                                               ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.getConsumer(DirectVmBlockingProducer.java:69)
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.process(DirectVmBlockingProducer.java:56)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:169)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:395)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:60)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:147)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:312)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:207)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+29-10-2021 12:55:26.094 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.c.file.GenericFileOnCompletion.processStrategyRollback - Rollback file strategy: org.apache.camel.component.file.strategy.GenericFileDeleteProcessStrategy@6d7226e for file: GenericFile[fileAdd.txt]
+29-10-2021 12:55:26.096 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[EB0226D40307461-0000000000000009]. Caused by: [org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException - No consumers available on endpoint: direct-vm://start. Exchange[]]
+org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.getConsumer(DirectVmBlockingProducer.java:69)
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.process(DirectVmBlockingProducer.java:56)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:169)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:395)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:60)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:147)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:312)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:207)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+29-10-2021 12:55:36.097 [Camel (camel-1) thread #1 - timer://hello] ERROR o.a.c.p.e.DefaultErrorHandler.log - Failed delivery for (MessageId: EB0226D40307461-000000000000000A on ExchangeId: EB0226D40307461-000000000000000B). Exhausted after delivery attempt: 1 caught: org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [from[timer://hello?period=10s]                                                ] [         2]
+	...
+[route1            ] [to1               ] [direct-vm:start                                                               ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.getConsumer(DirectVmBlockingProducer.java:69)
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.process(DirectVmBlockingProducer.java:56)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:169)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:395)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:60)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:147)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:312)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:207)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+29-10-2021 12:55:36.098 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.c.file.GenericFileOnCompletion.processStrategyRollback - Rollback file strategy: org.apache.camel.component.file.strategy.GenericFileDeleteProcessStrategy@6d7226e for file: GenericFile[fileAdd.txt]
+29-10-2021 12:55:36.100 [Camel (camel-1) thread #1 - timer://hello] WARN  o.a.c.component.timer.TimerConsumer.log - Error processing exchange. Exchange[EB0226D40307461-000000000000000B]. Caused by: [org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException - No consumers available on endpoint: direct-vm://start. Exchange[]]
+org.apache.camel.component.directvm.DirectVmConsumerNotAvailableException: No consumers available on endpoint: direct-vm://start. Exchange[]
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.getConsumer(DirectVmBlockingProducer.java:69)
+	at org.apache.camel.component.directvm.DirectVmBlockingProducer.process(DirectVmBlockingProducer.java:56)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:169)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:395)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:148)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:60)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:147)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:312)
+	at org.apache.camel.component.timer.TimerConsumer.sendTimerExchange(TimerConsumer.java:207)
+	at org.apache.camel.component.timer.TimerConsumer$1.run(TimerConsumer.java:76)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+29-10-2021 12:55:38.000 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:55:38.007 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.engine.AbstractCamelContext.doStop - Apache Camel 3.7.5 (camel-1) is shutting down
+29-10-2021 12:55:38.009 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.e.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 2 routes (timeout 45 seconds)
+29-10-2021 12:55:38.019 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Route: route2 shutdown complete, was consuming from: direct://start
+29-10-2021 12:55:38.024 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: timer://hello
+29-10-2021 12:55:38.024 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.e.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 2 routes completed in 15ms
+29-10-2021 12:55:38.059 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.engine.AbstractCamelContext.doStop - Apache Camel 3.7.5 (camel-1) uptime 1m12s
+29-10-2021 12:55:38.060 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.engine.AbstractCamelContext.doStop - Apache Camel 3.7.5 (camel-1) is shutdown in 53ms
+29-10-2021 12:55:38.333 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.i.endpoint.EventDrivenConsumer.info - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+29-10-2021 12:55:38.334 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.i.c.PublishSubscribeChannel.info - Channel 'application.errorChannel' has 0 subscriber(s).
+29-10-2021 12:55:38.335 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.i.endpoint.EventDrivenConsumer.info - stopped bean '_org.springframework.integration.errorLogger'
+29-10-2021 12:55:47.318 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication using Java 1.8.0_202 on DESKTOP-AH2VL3Q with PID 13392 (H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes started by lenovo in H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1)
+29-10-2021 12:55:47.323 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+29-10-2021 12:55:48.192 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerErrorChannel - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+29-10-2021 12:55:48.199 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerTaskScheduler - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+29-10-2021 12:55:48.202 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerHeaderChannelRegistry - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+29-10-2021 12:55:48.248 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+29-10-2021 12:55:48.258 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+29-10-2021 12:55:48.259 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+29-10-2021 12:55:48.473 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+29-10-2021 12:55:48.480 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+29-10-2021 12:55:48.480 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+29-10-2021 12:55:48.481 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.45]
+29-10-2021 12:55:48.639 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+29-10-2021 12:55:48.639 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1252 ms
+29-10-2021 12:55:48.665 [main] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+29-10-2021 12:55:48.665 [main] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+29-10-2021 12:55:48.668 [main] INFO  c.n.config.DynamicPropertyFactory.getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5e268ce6
+29-10-2021 12:55:49.021 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+29-10-2021 12:55:49.094 [main] INFO  o.a.camel.support.LRUCacheFactory.createLRUCacheFactory - Detected and using LRUCacheFactory: camel-caffeine-lrucache
+29-10-2021 12:55:49.462 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: c11640b9-b359-4fbf-a3ca-0c206be0de74
+
+29-10-2021 12:55:49.556 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4832f03b, org.springframework.security.web.context.SecurityContextPersistenceFilter@4693a9ef, org.springframework.security.web.header.HeaderWriterFilter@4b76aa5a, org.springframework.security.web.csrf.CsrfFilter@3337d04c, org.springframework.security.web.authentication.logout.LogoutFilter@4b5a078a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46e64760, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6ed922e1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7af3874e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@18371d89, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36327cec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fd05028, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a8816cc, org.springframework.security.web.session.SessionManagementFilter@120d3fd, org.springframework.security.web.access.ExceptionTranslationFilter@31e76a8d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@462e1e64]
+29-10-2021 12:55:49.724 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+29-10-2021 12:55:49.724 [main] INFO  o.s.i.c.PublishSubscribeChannel.info - Channel 'application.errorChannel' has 1 subscriber(s).
+29-10-2021 12:55:49.725 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - started bean '_org.springframework.integration.errorLogger'
+29-10-2021 12:55:49.725 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+29-10-2021 12:55:49.742 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+29-10-2021 12:55:49.762 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRoutesFromDirectory - Loading additional Camel XML routes from: classpath:camel/*.xml
+29-10-2021 12:55:49.762 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRouteTemplatesFromDirectory - Loading additional Camel XML route templates from: classpath:camel-template/*.xml
+29-10-2021 12:55:49.763 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRestsFromDirectory - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+29-10-2021 12:55:49.901 [main] INFO  o.a.c.i.engine.AbstractCamelContext.doStartContext - Apache Camel 3.7.5 (camel-1) is starting
+29-10-2021 12:55:49.903 [main] INFO  o.a.c.i.engine.AbstractCamelContext.doStartCamel - StreamCaching is not in use. If using streams then it's recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+29-10-2021 12:55:49.926 [main] INFO  o.a.c.i.e.InternalRouteStartupManager.log - Route: route1 started and consuming from: timer://hello
+29-10-2021 12:55:49.927 [main] INFO  o.a.c.i.e.InternalRouteStartupManager.log - Route: route2 started and consuming from: direct-vm://start
+29-10-2021 12:55:49.930 [main] INFO  o.a.c.i.engine.AbstractCamelContext.doStartContext - Total 2 routes, of which 2 are started
+29-10-2021 12:55:49.931 [main] INFO  o.a.c.i.engine.AbstractCamelContext.doStartContext - Apache Camel 3.7.5 (camel-1) started in 29ms
+29-10-2021 12:55:49.936 [main] INFO  c.l.LearncamelSpringBootApplication.logStarted - Started LearncamelSpringBootApplication in 2.97 seconds (JVM running for 4.371)
+29-10-2021 12:56:47.314 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:56:47.318 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.engine.AbstractCamelContext.doStop - Apache Camel 3.7.5 (camel-1) is shutting down
+29-10-2021 12:56:47.319 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.e.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 2 routes (timeout 45 seconds)
+29-10-2021 12:56:47.322 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 45 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:56:48.337 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 44 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:56:48.687 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:56:49.347 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 43 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:56:50.350 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:56:50.360 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 42 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:56:51.367 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 41 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:56:52.098 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:56:52.377 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 40 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:56:53.384 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 39 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:56:54.399 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 38 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:56:55.400 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 37 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:56:56.410 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 36 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:56:57.413 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 35 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:56:58.424 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 34 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:56:59.440 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 33 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:00.450 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 32 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:01.463 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 31 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:02.472 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 30 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:03.481 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 29 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:04.487 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 28 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:05.499 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 27 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:06.509 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 26 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:07.523 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 25 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:08.530 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 24 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:09.545 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 23 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:10.560 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 22 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:11.569 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 21 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:12.572 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 20 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:13.589 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 19 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:14.602 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 18 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:15.615 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 17 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:16.630 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 16 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:17.641 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 15 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:18.656 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 14 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:19.667 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 13 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:20.672 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 12 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:21.684 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 11 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:22.696 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 10 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:23.707 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 9 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:24.723 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 8 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:25.736 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 7 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:26.745 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 6 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:27.551 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:57:27.760 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 5 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:28.772 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 4 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:29.660 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:57:29.780 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 3 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:30.794 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 2 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:30.894 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:57:31.128 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:57:31.805 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 1 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:57:32.333 [Camel (camel-1) thread #2 - ShutdownTask] WARN  o.a.c.i.e.DefaultShutdownStrategy.run - Interrupted while waiting during graceful shutdown, will force shutdown now.
+29-10-2021 12:57:32.333 [RMI TCP Connection(2)-127.0.0.1] WARN  o.a.c.i.e.DefaultShutdownStrategy.doShutdown - Timeout occurred during graceful shutdown. Forcing the routes to be shutdown now. Notice: some resources may still be running as graceful shutdown did not complete successfully.
+29-10-2021 12:57:32.335 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Route: route2 shutdown complete, was consuming from: direct-vm://start
+29-10-2021 12:57:32.347 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: timer://hello
+29-10-2021 12:57:32.348 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.e.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 2 routes completed in 45s28ms
+29-10-2021 12:57:32.358 [RMI TCP Connection(2)-127.0.0.1] WARN  o.a.c.i.e.DefaultInflightRepository.doStop - Shutting down while there are still 1 inflight exchanges.
+29-10-2021 12:57:32.362 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.engine.AbstractCamelContext.doStop - Apache Camel 3.7.5 (camel-1) uptime 1m42s
+29-10-2021 12:57:32.362 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.engine.AbstractCamelContext.doStop - Apache Camel 3.7.5 (camel-1) is shutdown in 45s44ms
+29-10-2021 12:57:32.553 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.i.endpoint.EventDrivenConsumer.info - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+29-10-2021 12:57:32.553 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.i.c.PublishSubscribeChannel.info - Channel 'application.errorChannel' has 0 subscriber(s).
+29-10-2021 12:57:32.554 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.i.endpoint.EventDrivenConsumer.info - stopped bean '_org.springframework.integration.errorLogger'
+29-10-2021 12:57:46.400 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication using Java 1.8.0_202 on DESKTOP-AH2VL3Q with PID 12848 (H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes started by lenovo in H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1)
+29-10-2021 12:57:46.404 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+29-10-2021 12:57:47.219 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerErrorChannel - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+29-10-2021 12:57:47.226 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerTaskScheduler - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+29-10-2021 12:57:47.229 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerHeaderChannelRegistry - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+29-10-2021 12:57:47.280 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+29-10-2021 12:57:47.291 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+29-10-2021 12:57:47.292 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+29-10-2021 12:57:47.516 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+29-10-2021 12:57:47.523 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+29-10-2021 12:57:47.524 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+29-10-2021 12:57:47.525 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.45]
+29-10-2021 12:57:47.652 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+29-10-2021 12:57:47.652 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1199 ms
+29-10-2021 12:57:47.679 [main] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+29-10-2021 12:57:47.680 [main] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+29-10-2021 12:57:47.682 [main] INFO  c.n.config.DynamicPropertyFactory.getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7cf162bc
+29-10-2021 12:57:48.055 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+29-10-2021 12:57:48.120 [main] INFO  o.a.camel.support.LRUCacheFactory.createLRUCacheFactory - Detected and using LRUCacheFactory: camel-caffeine-lrucache
+29-10-2021 12:57:48.481 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: 4765d59c-eaa1-45ab-8f5a-d4ff57831b32
+
+29-10-2021 12:57:48.571 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@485e13d7, org.springframework.security.web.context.SecurityContextPersistenceFilter@194d329e, org.springframework.security.web.header.HeaderWriterFilter@5961e92d, org.springframework.security.web.csrf.CsrfFilter@6dab01d9, org.springframework.security.web.authentication.logout.LogoutFilter@1455154c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f3faa70, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@526b2f3e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@43984213, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@70d63e05, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e7fe6d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c9fbb61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ff7a73, org.springframework.security.web.session.SessionManagementFilter@3a2d3909, org.springframework.security.web.access.ExceptionTranslationFilter@36327cec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43982337]
+29-10-2021 12:57:48.738 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+29-10-2021 12:57:48.738 [main] INFO  o.s.i.c.PublishSubscribeChannel.info - Channel 'application.errorChannel' has 1 subscriber(s).
+29-10-2021 12:57:48.739 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - started bean '_org.springframework.integration.errorLogger'
+29-10-2021 12:57:48.739 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+29-10-2021 12:57:48.755 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+29-10-2021 12:57:48.774 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRoutesFromDirectory - Loading additional Camel XML routes from: classpath:camel/*.xml
+29-10-2021 12:57:48.774 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRouteTemplatesFromDirectory - Loading additional Camel XML route templates from: classpath:camel-template/*.xml
+29-10-2021 12:57:48.775 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRestsFromDirectory - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+29-10-2021 12:57:48.927 [main] INFO  o.a.c.i.engine.AbstractCamelContext.doStartContext - Apache Camel 3.7.5 (camel-1) is starting
+29-10-2021 12:57:48.929 [main] INFO  o.a.c.i.engine.AbstractCamelContext.doStartCamel - StreamCaching is not in use. If using streams then it's recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+29-10-2021 12:57:48.956 [main] INFO  o.a.c.i.e.InternalRouteStartupManager.log - Route: route1 started and consuming from: timer://hello
+29-10-2021 12:57:48.957 [main] INFO  o.a.c.i.e.InternalRouteStartupManager.log - Route: route2 started and consuming from: direct-vm://start
+29-10-2021 12:57:48.960 [main] INFO  o.a.c.i.engine.AbstractCamelContext.doStartContext - Total 2 routes, of which 2 are started
+29-10-2021 12:57:48.961 [main] INFO  o.a.c.i.engine.AbstractCamelContext.doStartContext - Apache Camel 3.7.5 (camel-1) started in 34ms
+29-10-2021 12:57:48.967 [main] INFO  c.l.LearncamelSpringBootApplication.logStarted - Started LearncamelSpringBootApplication in 2.898 seconds (JVM running for 3.794)
+29-10-2021 12:58:01.830 [Camel (camel-1) thread #1 - timer://hello] INFO  route2.log - body Fallback message
+29-10-2021 12:58:30.689 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:58:30.691 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.engine.AbstractCamelContext.doStop - Apache Camel 3.7.5 (camel-1) is shutting down
+29-10-2021 12:58:30.692 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.e.DefaultShutdownStrategy.doShutdown - Starting to graceful shutdown 2 routes (timeout 45 seconds)
+29-10-2021 12:58:30.695 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 45 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:31.706 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 44 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:31.918 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:58:32.718 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 43 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:33.731 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 42 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:34.744 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 41 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:34.910 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:58:35.286 [RMI TCP Connection(5)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:58:35.592 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:58:35.757 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 40 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:36.767 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 39 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:37.780 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 38 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:38.794 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 37 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:39.795 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 36 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:40.806 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 35 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:41.816 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 34 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:42.827 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 33 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:43.835 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 32 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:44.847 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 31 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:45.849 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 30 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:46.858 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 29 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:47.874 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 28 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:48.891 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 27 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:49.904 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 26 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:50.086 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:58:50.918 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 25 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:51.928 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 24 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:52.939 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 23 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:53.948 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 22 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:54.959 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 21 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:55.915 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:58:55.968 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 20 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:56.981 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 19 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:57.991 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 18 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:58:59.003 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 17 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:00.013 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 16 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:00.026 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:59:00.328 [RMI TCP Connection(10)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:59:01.022 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 15 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:02.034 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 14 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:03.045 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 13 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:04.056 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 12 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:04.147 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:59:04.472 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:59:05.066 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 11 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:06.075 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 10 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:07.085 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 9 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:08.092 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 8 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:09.102 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 7 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:09.763 [RMI TCP Connection(13)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:59:09.982 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:59:10.114 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 6 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:11.007 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:59:11.126 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 5 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:11.286 [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:59:12.131 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 4 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:12.394 [RMI TCP Connection(17)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:59:12.682 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:59:13.141 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 3 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:13.164 [RMI TCP Connection(19)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:59:14.149 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 2 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:15.161 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Waiting as there are still 1 inflight and pending exchanges to complete, timeout in 1 seconds. Inflights per route: [route1 = 1]
+29-10-2021 12:59:15.707 [Camel (camel-1) thread #2 - ShutdownTask] WARN  o.a.c.i.e.DefaultShutdownStrategy.run - Interrupted while waiting during graceful shutdown, will force shutdown now.
+29-10-2021 12:59:15.706 [RMI TCP Connection(2)-127.0.0.1] WARN  o.a.c.i.e.DefaultShutdownStrategy.doShutdown - Timeout occurred during graceful shutdown. Forcing the routes to be shutdown now. Notice: some resources may still be running as graceful shutdown did not complete successfully.
+29-10-2021 12:59:15.709 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Route: route2 shutdown complete, was consuming from: direct-vm://start
+29-10-2021 12:59:15.720 [Camel (camel-1) thread #2 - ShutdownTask] INFO  o.a.c.i.e.DefaultShutdownStrategy.run - Route: route1 shutdown complete, was consuming from: timer://hello
+29-10-2021 12:59:15.720 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.e.DefaultShutdownStrategy.doShutdown - Graceful shutdown of 2 routes completed in 45s28ms
+29-10-2021 12:59:15.731 [RMI TCP Connection(2)-127.0.0.1] WARN  o.a.c.i.e.DefaultInflightRepository.doStop - Shutting down while there are still 1 inflight exchanges.
+29-10-2021 12:59:15.737 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.engine.AbstractCamelContext.doStop - Apache Camel 3.7.5 (camel-1) uptime 1m26s
+29-10-2021 12:59:15.738 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.i.engine.AbstractCamelContext.doStop - Apache Camel 3.7.5 (camel-1) is shutdown in 45s47ms
+29-10-2021 12:59:15.886 [RMI TCP Connection(20)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+29-10-2021 12:59:15.930 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.i.endpoint.EventDrivenConsumer.info - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+29-10-2021 12:59:15.931 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.i.c.PublishSubscribeChannel.info - Channel 'application.errorChannel' has 0 subscriber(s).
+29-10-2021 12:59:15.931 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.i.endpoint.EventDrivenConsumer.info - stopped bean '_org.springframework.integration.errorLogger'
+29-10-2021 12:59:27.352 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication using Java 1.8.0_202 on DESKTOP-AH2VL3Q with PID 10780 (H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1\target\classes started by lenovo in H:\circuitbreaker\learncamel-spring-boot-cireuitbreaker-lab1)
+29-10-2021 12:59:27.355 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+29-10-2021 12:59:28.159 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerErrorChannel - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+29-10-2021 12:59:28.166 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerTaskScheduler - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+29-10-2021 12:59:28.169 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor.registerHeaderChannelRegistry - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+29-10-2021 12:59:28.213 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+29-10-2021 12:59:28.223 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+29-10-2021 12:59:28.225 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+29-10-2021 12:59:28.424 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+29-10-2021 12:59:28.431 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+29-10-2021 12:59:28.432 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+29-10-2021 12:59:28.433 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.45]
+29-10-2021 12:59:28.573 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+29-10-2021 12:59:28.573 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1167 ms
+29-10-2021 12:59:28.598 [main] WARN  c.n.c.sources.URLConfigurationSource.<init> - No URLs will be polled as dynamic configuration sources.
+29-10-2021 12:59:28.599 [main] INFO  c.n.c.sources.URLConfigurationSource.<init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+29-10-2021 12:59:28.600 [main] INFO  c.n.config.DynamicPropertyFactory.getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7cf162bc
+29-10-2021 12:59:28.949 [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration.checkTemplateLocationExists - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+29-10-2021 12:59:29.017 [main] INFO  o.a.camel.support.LRUCacheFactory.createLRUCacheFactory - Detected and using LRUCacheFactory: camel-caffeine-lrucache
+29-10-2021 12:59:29.369 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: ecd2e5ae-25a4-4b6c-8ee8-d0e3fcf0c907
+
+29-10-2021 12:59:29.458 [main] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@485e13d7, org.springframework.security.web.context.SecurityContextPersistenceFilter@194d329e, org.springframework.security.web.header.HeaderWriterFilter@5961e92d, org.springframework.security.web.csrf.CsrfFilter@6dab01d9, org.springframework.security.web.authentication.logout.LogoutFilter@1455154c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f3faa70, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@526b2f3e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@43984213, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@70d63e05, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e7fe6d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c9fbb61, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ff7a73, org.springframework.security.web.session.SessionManagementFilter@3a2d3909, org.springframework.security.web.access.ExceptionTranslationFilter@36327cec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43982337]
+29-10-2021 12:59:29.619 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+29-10-2021 12:59:29.620 [main] INFO  o.s.i.c.PublishSubscribeChannel.info - Channel 'application.errorChannel' has 1 subscriber(s).
+29-10-2021 12:59:29.621 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - started bean '_org.springframework.integration.errorLogger'
+29-10-2021 12:59:29.621 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+29-10-2021 12:59:29.637 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+29-10-2021 12:59:29.657 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRoutesFromDirectory - Loading additional Camel XML routes from: classpath:camel/*.xml
+29-10-2021 12:59:29.658 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRouteTemplatesFromDirectory - Loading additional Camel XML route templates from: classpath:camel-template/*.xml
+29-10-2021 12:59:29.658 [main] INFO  o.a.c.s.b.SpringBootRoutesCollector.collectXmlRestsFromDirectory - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+29-10-2021 12:59:29.945 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Pausing ProtocolHandler ["http-nio-8080"]
+29-10-2021 12:59:29.945 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+29-10-2021 12:59:29.950 [main] WARN  o.a.c.loader.WebappClassLoaderBase.log - The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+29-10-2021 12:59:29.951 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Stopping ProtocolHandler ["http-nio-8080"]
+29-10-2021 12:59:29.954 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Destroying ProtocolHandler ["http-nio-8080"]
+29-10-2021 12:59:29.956 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+29-10-2021 12:59:29.974 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.apache.camel.FailedToCreateRouteException: Failed to create route route2 at: >>> To[http://google.com] <<< in route: Route(route2)[From[direct-vm:start] -> [To[http://google.com... because of No endpoint could be found for: http://google.com, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:229)
+	at org.apache.camel.reifier.RouteReifier.createRoute(RouteReifier.java:73)
+	at org.apache.camel.impl.DefaultModelReifierFactory.createRoute(DefaultModelReifierFactory.java:49)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:603)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:558)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doInit(AbstractCamelContext.java:2655)
+	at org.apache.camel.support.service.BaseService.init(BaseService.java:83)
+	at org.apache.camel.impl.engine.AbstractCamelContext.init(AbstractCamelContext.java:2427)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:111)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2444)
+	at org.apache.camel.spring.SpringCamelContext.start(SpringCamelContext.java:130)
+	at org.apache.camel.spring.SpringCamelContext.onApplicationEvent(SpringCamelContext.java:167)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:938)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.learncamel.LearncamelSpringBootApplication.main(LearncamelSpringBootApplication.java:10)
+Caused by: org.apache.camel.NoSuchEndpointException: No endpoint could be found for: http://google.com, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.impl.engine.AbstractCamelContext.doGetEndpoint(AbstractCamelContext.java:919)
+	at org.apache.camel.impl.engine.AbstractCamelContext.getEndpoint(AbstractCamelContext.java:794)
+	at org.apache.camel.support.CamelContextHelper.resolveEndpoint(CamelContextHelper.java:123)
+	at org.apache.camel.reifier.SendReifier.resolveEndpoint(SendReifier.java:43)
+	at org.apache.camel.reifier.SendReifier.createProcessor(SendReifier.java:36)
+	at org.apache.camel.reifier.ProcessorReifier.makeProcessor(ProcessorReifier.java:829)
+	at org.apache.camel.reifier.ProcessorReifier.addRoutes(ProcessorReifier.java:575)
+	at org.apache.camel.reifier.RouteReifier.doCreateRoute(RouteReifier.java:227)
+	... 26 common frames omitted
+29-10-2021 12:59:29.979 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+29-10-2021 12:59:29.980 [main] INFO  o.s.i.c.PublishSubscribeChannel.info - Channel 'application.errorChannel' has 0 subscriber(s).
+29-10-2021 12:59:29.980 [main] INFO  o.s.i.endpoint.EventDrivenConsumer.info - stopped bean '_org.springframework.integration.errorLogger'

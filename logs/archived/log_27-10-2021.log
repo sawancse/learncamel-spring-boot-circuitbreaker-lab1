@@ -1,0 +1,103 @@
+27-10-2021 18:13:17.380 [main] INFO  c.l.LearncamelSpringBootApplication.logStarting - Starting LearncamelSpringBootApplication on DESKTOP-AH2VL3Q with PID 2620 (H:\receipientlist\learncamel-spring-boot-receipientlist-lab1\target\classes started by lenovo in H:\receipientlist\learncamel-spring-boot-receipientlist-lab1)
+27-10-2021 18:13:17.390 [main] INFO  c.l.LearncamelSpringBootApplication.logStartupProfileInfo - The following profiles are active: dev
+27-10-2021 18:13:17.518 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55b699ef: startup date [Wed Oct 27 18:13:17 IST 2021]; root of context hierarchy
+27-10-2021 18:13:17.700 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit> - HV000001: Hibernate Validator 5.3.6.Final
+27-10-2021 18:13:19.269 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$26194495] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+27-10-2021 18:13:19.766 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+27-10-2021 18:13:19.782 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+27-10-2021 18:13:19.785 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+27-10-2021 18:13:19.928 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+27-10-2021 18:13:19.928 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 2410 ms
+27-10-2021 18:13:20.189 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+27-10-2021 18:13:20.194 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+27-10-2021 18:13:20.195 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+27-10-2021 18:13:20.196 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+27-10-2021 18:13:20.197 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+27-10-2021 18:13:20.665 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55b699ef: startup date [Wed Oct 27 18:13:17 IST 2021]; root of context hierarchy
+27-10-2021 18:13:20.756 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+27-10-2021 18:13:20.758 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+27-10-2021 18:13:20.829 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+27-10-2021 18:13:20.831 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+27-10-2021 18:13:20.916 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+27-10-2021 18:13:21.265 [main] WARN  o.a.c.i.DefaultCamelBeanPostProcessor.postProcessBeforeInitialization - No CamelContext defined yet so cannot inject into bean: routesHealthCheckRepository
+27-10-2021 18:13:21.382 [main] INFO  o.a.c.i.c.DefaultTypeConverter.doStart - Type converters loaded (core: 192, classpath: 1)
+27-10-2021 18:13:22.290 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+27-10-2021 18:13:22.375 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRoutes - Loading additional Camel XML routes from: classpath:camel/*.xml
+27-10-2021 18:13:22.376 [main] INFO  o.a.c.spring.boot.RoutesCollector.loadXmlRests - Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+27-10-2021 18:13:22.387 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: camel-1) is starting
+27-10-2021 18:13:22.388 [main] INFO  o.a.c.m.ManagedManagementStrategy.doStart - JMX is enabled
+27-10-2021 18:13:22.864 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartCamel - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+27-10-2021 18:13:22.987 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route1 started and consuming from: timer://hello?period=10s
+27-10-2021 18:13:22.988 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route2 started and consuming from: direct://start
+27-10-2021 18:13:22.989 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route3 started and consuming from: direct://tap
+27-10-2021 18:13:22.990 [main] INFO  o.a.camel.spring.SpringCamelContext.doStartOrResumeRouteConsumers - Route: route4 started and consuming from: direct://d
+27-10-2021 18:13:22.992 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Total 4 routes, of which 4 are started
+27-10-2021 18:13:22.994 [main] INFO  o.a.camel.spring.SpringCamelContext.start - Apache Camel 2.20.1 (CamelContext: camel-1) started in 0.607 seconds
+27-10-2021 18:13:23.001 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-8080"]
+27-10-2021 18:13:23.016 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-8080"]
+27-10-2021 18:13:23.361 [main] INFO  o.a.tomcat.util.net.NioSelectorPool.log - Using a shared selector for servlet write/read
+27-10-2021 18:13:23.383 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+27-10-2021 18:13:23.387 [main] INFO  c.l.LearncamelSpringBootApplication.logStarted - Started LearncamelSpringBootApplication in 6.446 seconds (JVM running for 7.736)
+27-10-2021 18:13:25.120 [Camel (camel-1) thread #1 - timer://hello] INFO  route2.log - Main route: Send 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500' to tap router
+27-10-2021 18:13:25.122 [Camel (camel-1) thread #1 - timer://hello] INFO  route2.log - Main route: Add 'two' to 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500'
+27-10-2021 18:13:25.125 [Camel (camel-1) thread #1 - timer://hello] INFO  route2.log - Main route: Output 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500 and two'
+27-10-2021 18:13:25.127 [Camel (camel-1) thread #3 - WireTap] INFO  route3.log - Tap Wire route: received 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500'
+27-10-2021 18:13:25.127 [Camel (camel-1) thread #1 - timer://hello] INFO  route3.log - Tap Wire route: received 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500'
+27-10-2021 18:13:25.128 [Camel (camel-1) thread #3 - WireTap] INFO  route3.log - Tap Wire route: Add 'three' to 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500'
+27-10-2021 18:13:25.128 [Camel (camel-1) thread #1 - timer://hello] INFO  route3.log - Tap Wire route: Add 'three' to 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500'
+27-10-2021 18:13:25.128 [Camel (camel-1) thread #3 - WireTap] INFO  route3.log - Tap Wire route: Output 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500 and three'
+27-10-2021 18:13:25.129 [Camel (camel-1) thread #1 - timer://hello] INFO  route3.log - Tap Wire route: Output 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500 and three'
+27-10-2021 18:13:25.130 [Camel (camel-1) thread #1 - timer://hello] INFO  route4.log - Main route: Send 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500' to tap router
+27-10-2021 18:13:25.132 [Camel (camel-1) thread #1 - timer://hello] INFO  route4.log - Main route: Add 'two' to 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500'
+27-10-2021 18:13:25.132 [Camel (camel-1) thread #4 - WireTap] INFO  route3.log - Tap Wire route: received 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500'
+27-10-2021 18:13:25.132 [Camel (camel-1) thread #1 - timer://hello] INFO  route4.log - Main route: Output 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500 and two'
+27-10-2021 18:13:25.133 [Camel (camel-1) thread #4 - WireTap] INFO  route3.log - Tap Wire route: Add 'three' to 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500'
+27-10-2021 18:13:25.134 [Camel (camel-1) thread #4 - WireTap] INFO  route3.log - Tap Wire route: Output 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500 and three'
+27-10-2021 18:13:25.135 [Camel (camel-1) thread #1 - timer://hello] INFO  route2.log - Main route: Send 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500 and two' to tap router
+27-10-2021 18:13:25.135 [Camel (camel-1) thread #1 - timer://hello] INFO  route2.log - Main route: Add 'two' to 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500 and two'
+27-10-2021 18:13:25.136 [Camel (camel-1) thread #5 - WireTap] INFO  route3.log - Tap Wire route: received 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500 and two'
+27-10-2021 18:13:25.137 [Camel (camel-1) thread #1 - timer://hello] INFO  route2.log - Main route: Output 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500 and two and two'
+27-10-2021 18:13:25.137 [Camel (camel-1) thread #5 - WireTap] INFO  route3.log - Tap Wire route: Add 'three' to 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500 and two'
+27-10-2021 18:13:25.137 [Camel (camel-1) thread #5 - WireTap] INFO  route3.log - Tap Wire route: Output 'type,sku#,itemdescription,price
+ADD,100,Samsung TV,500
+ADD,101,LG TV,500 and two and three'
